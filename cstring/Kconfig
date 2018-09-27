@@ -1,0 +1,37 @@
+
+# Kconfig file for package cstring
+menuconfig PKG_USING_CSTRING
+    bool "cstring: a simple C string lib"
+    default n
+
+if PKG_USING_CSTRING
+
+    config PKG_CSTRING_PATH
+        string
+        default "/rtpkgs_sources/cstring"
+
+    choice
+        prompt "Version"
+        default PKG_USING_CSTRING_LATEST_VERSION
+        help
+            Select the package version
+
+        config PKG_USING_CSTRING_V100
+            bool "v1.0.0"
+
+        config PKG_USING_CSTRING_LATEST_VERSION
+            bool "latest"
+    endchoice
+          
+    config PKG_CSTRING_VER
+       string
+       default "v1.0.0"    if PKG_USING_CSTRING_V100
+       default "latest"    if PKG_USING_CSTRING_LATEST_VERSION
+
+    config CSTRING_USING_DEMO
+        bool
+        prompt "cstring demo example"
+        default n
+
+endif
+

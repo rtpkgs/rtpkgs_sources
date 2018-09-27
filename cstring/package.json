@@ -1,0 +1,12 @@
+
+{
+    "name": "cstring",
+    "description": "cstring: a simple C string lib",
+    "keywords": [
+        "cstring"
+    ],
+    "site" : [
+    {"version" : "v1.0.0", "URL" : "https://github.com/rtpkgs/cstring.git", "filename" : "cstring-1.0.0.zip", "VER_SHA" : "f8fbeda3f6f2eb754f5529bd437b950dca188736"},
+    {"version" : "latest", "URL" : "https://github.com/rtpkgs/cstring.git", "filename" : "cstring-latest.zip","VER_SHA" : "master"}
+    ]
+}

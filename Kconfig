@@ -1,0 +1,5 @@
+menu "rtpkgs online packages"
+
+source "$PKGS_DIR/rtpkgs_sources/cstring/Kconfig"
+
+endmenu
