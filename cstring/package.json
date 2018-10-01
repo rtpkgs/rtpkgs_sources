@@ -6,7 +6,7 @@
         "cstring"
     ],
     "site" : [
-    {"version" : "v1.0.0", "URL" : "https://github.com/rtpkgs/cstring.git", "filename" : "cstring-1.0.0.zip", "VER_SHA" : "f8fbeda3f6f2eb754f5529bd437b950dca188736"},
+    {"version" : "v1.0.0", "URL" : "https://github.com/rtpkgs/cstring.git", "filename" : "cstring-1.0.0.zip", "VER_SHA" : "0472d6b91e1d54bbe7992a0e33c23c659c0b691a"},
     {"version" : "latest", "URL" : "https://github.com/rtpkgs/cstring.git", "filename" : "cstring-latest.zip","VER_SHA" : "master"}
     ]
 }
