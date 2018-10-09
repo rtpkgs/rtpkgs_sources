@@ -6,7 +6,7 @@
         "argparse"
     ],
     "site" : [
-    {"version" : "v1.0.1", "URL" : "https://github.com/rtpkgs/argparse.git", "filename" : "argparse-1.0.1.zip", "VER_SHA" : "00a51bfdcff8ff27e718ea2d472f7860c5170375"},
+    {"version" : "v1.0.1", "URL" : "https://github.com/rtpkgs/argparse.git", "filename" : "argparse-v1.0.1.zip","VER_SHA" : "00a51bfdcff8ff27e718ea2d472f7860c5170375"},
     {"version" : "latest", "URL" : "https://github.com/rtpkgs/argparse.git", "filename" : "argparse-latest.zip","VER_SHA" : "master"}
     ]
 }
