@@ -1,0 +1,12 @@
+
+{
+    "name": "libbmpread",
+    "description": "libbmpread: tiny, fast bitmap (.bmp) image file loader",
+    "keywords": [
+        "libbmpread"
+    ],
+    "site" : [
+    {"version" : "v1.0.0", "URL" : "https://github.com/rtpkgs/libbmpread.git", "filename" : "libbmpread-v1.0.0.zip","VER_SHA" : "fc75790b7ec9d655006a2b56322e9b224e8ead2c"},
+    {"version" : "latest", "URL" : "https://github.com/rtpkgs/libbmpread.git", "filename" : "libbmpread-latest.zip","VER_SHA" : "master"}
+    ]
+}

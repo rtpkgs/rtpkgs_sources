@@ -1,0 +1,37 @@
+
+# Kconfig file for package libbmpread
+menuconfig PKG_USING_LIBBMPREAD
+    bool "libbmpread: tiny, fast bitmap (.bmp) image file loader"
+    default n
+
+if PKG_USING_LIBBMPREAD
+
+    config PKG_LIBBMPREAD_PATH
+        string
+        default "/rtpkgs_sources/libbmpread"
+
+    choice
+        prompt "Version"
+        default PKG_USING_LIBBMPREAD_LATEST_VERSION
+        help
+            Select the package version
+
+        config PKG_USING_LIBBMPREAD_V100
+            bool "v1.0.0"
+
+        config PKG_USING_LIBBMPREAD_LATEST_VERSION
+            bool "latest"
+    endchoice
+          
+    config PKG_LIBBMPREAD_VER
+       string
+       default "v1.0.0"    if PKG_USING_LIBBMPREAD_V100
+       default "latest"    if PKG_USING_LIBBMPREAD_LATEST_VERSION
+
+    #config LIBBMPREAD_USING_DEMO
+    #    bool
+    #    prompt "libbmpread demo example"
+    #    default n
+
+endif
+
