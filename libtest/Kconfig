@@ -1,0 +1,37 @@
+
+# Kconfig file for package libtest
+menuconfig PKG_USING_LIBTEST
+    bool "libtest: RT-Thread test library (rough version)"
+    default n
+
+if PKG_USING_LIBTEST
+
+    config PKG_LIBTEST_PATH
+        string
+        default "/rtpkgs_sources/libtest"
+
+    choice
+        prompt "Version"
+        default PKG_USING_LIBTEST_LATEST_VERSION
+        help
+            Select the package version
+
+        config PKG_USING_LIBTEST_V100
+            bool "v1.0.0"
+
+        config PKG_USING_LIBTEST_LATEST_VERSION
+            bool "latest"
+    endchoice
+          
+    config PKG_LIBTEST_VER
+       string
+       default "v1.0.0"    if PKG_USING_LIBTEST_V100
+       default "latest"    if PKG_USING_LIBTEST_LATEST_VERSION
+
+    #config LIBTEST_USING_DEMO
+    #    bool
+    #    prompt "libtest demo example"
+    #    default n
+
+endif
+
