@@ -2,6 +2,7 @@
 # Kconfig file for package libtest
 menuconfig PKG_USING_LIBTEST
     bool "libtest: RT-Thread test library (rough version)"
+    select PKG_USING_OPTPARSE
     default n
 
 if PKG_USING_LIBTEST
