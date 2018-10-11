@@ -1,0 +1,37 @@
+
+# Kconfig file for package sam
+menuconfig PKG_USING_SAM
+    bool "sam: Software Automatic Mouth - Tiny Speech Synthesizer for RT-Thread"
+    default n
+
+if PKG_USING_SAM
+
+    config PKG_SAM_PATH
+        string
+        default "/rtpkgs_sources/sam"
+
+    choice
+        prompt "Version"
+        default PKG_USING_SAM_LATEST_VERSION
+        help
+            Select the package version
+
+        config PKG_USING_SAM_V100
+            bool "v1.0.0"
+
+        config PKG_USING_SAM_LATEST_VERSION
+            bool "latest"
+    endchoice
+          
+    config PKG_SAM_VER
+       string
+       default "v1.0.0"    if PKG_USING_SAM_V100
+       default "latest"    if PKG_USING_SAM_LATEST_VERSION
+
+    #config SAM_USING_DEMO
+    #    bool
+    #    prompt "sam demo example"
+    #    default n
+
+endif
+

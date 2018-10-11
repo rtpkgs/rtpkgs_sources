@@ -4,5 +4,6 @@ source "$PKGS_DIR/rtpkgs_sources/cstring/Kconfig"
 source "$PKGS_DIR/rtpkgs_sources/argparse/Kconfig"
 source "$PKGS_DIR/rtpkgs_sources/libbmpread/Kconfig"
 source "$PKGS_DIR/rtpkgs_sources/libtest/Kconfig"
+source "$PKGS_DIR/rtpkgs_sources/sam/Kconfig"
 
 endmenu

@@ -1,0 +1,12 @@
+
+{
+    "name": "sam",
+    "description": "sam: Software Automatic Mouth - Tiny Speech Synthesizer for RT-Thread",
+    "keywords": [
+        "sam"
+    ],
+    "site" : [
+    {"version" : "v1.0.0", "URL" : "https://github.com/rtpkgs/sam.git", "filename" : "sam-v1.0.0.zip","VER_SHA" : "88e5289353342463b2707886de00a359315f9284"},
+    {"version" : "latest", "URL" : "https://github.com/rtpkgs/sam.git", "filename" : "sam-latest.zip","VER_SHA" : "master"}
+    ]
+}
