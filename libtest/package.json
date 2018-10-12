@@ -6,7 +6,7 @@
         "libtest"
     ],
     "site" : [
-    {"version" : "v1.0.0", "URL" : "https://github.com/rtpkgs/libtest.git", "filename" : "libtest-v1.0.0.zip","VER_SHA" : "62e53801d2215b74faffaca5b934a58f71779e5d"},
+    {"version" : "v1.1.0", "URL" : "https://github.com/rtpkgs/libtest.git", "filename" : "libtest-v1.1.0.zip","VER_SHA" : "ce815ffd0778ce655734b745783bea0d092fd14c"},
     {"version" : "latest", "URL" : "https://github.com/rtpkgs/libtest.git", "filename" : "libtest-latest.zip","VER_SHA" : "master"}
     ]
 }
