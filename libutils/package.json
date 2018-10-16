@@ -6,7 +6,7 @@
         "libutils"
     ],
     "site" : [
-    {"version" : "v1.1.0", "URL" : "https://github.com/rtpkgs/libutils.git", "filename" : "libutils-v1.1.0.zip","VER_SHA" : "93fb967778b98231ea11d1dd5bac05accef732df"},
+    {"version" : "v1.1.0", "URL" : "https://github.com/rtpkgs/libutils.git", "filename" : "libutils-v1.1.0.zip","VER_SHA" : "ecd1b5027146d5ee07cea5c9272b216d9be3a8c8"},
     {"version" : "latest", "URL" : "https://github.com/rtpkgs/libutils.git", "filename" : "libutils-latest.zip","VER_SHA" : "master"}
     ]
 }
