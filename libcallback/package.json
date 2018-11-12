@@ -1,0 +1,12 @@
+
+{
+    "name": "libcallback",
+    "description": "libcallback: the library of sync and asyn callback based on rt-thread",
+    "keywords": [
+        "libcallback"
+    ],
+    "site" : [
+    {"version" : "v1.0.0", "URL" : "https://github.com/rtpkgs/libcallback.git", "filename" : "libcallback-v1.0.0.zip","VER_SHA" : "f1a93e47f0a59c81c4809ccbdaf94c7ce08530fd"},
+    {"version" : "latest", "URL" : "https://github.com/rtpkgs/libcallback.git", "filename" : "libcallback-latest.zip","VER_SHA" : "master"}
+    ]
+}

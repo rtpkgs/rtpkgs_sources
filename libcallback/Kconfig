@@ -1,0 +1,37 @@
+
+# Kconfig file for package libcallback
+menuconfig PKG_USING_LIBCALLBACK
+    bool "libcallback: the library of sync and asyn callback based on rt-thread"
+    default n
+
+if PKG_USING_LIBCALLBACK
+
+    config PKG_LIBUTILS_PATH
+        string
+        default "/rtpkgs_sources/libcallback"
+
+    choice
+        prompt "Version"
+        default PKG_USING_LIBCALLBACK_LATEST_VERSION
+        help
+            Select the package version
+
+        config PKG_USING_LIBCALLBACK_V100
+            bool "v1.0.0"
+
+        config PKG_USING_LIBCALLBACK_LATEST_VERSION
+            bool "latest"
+    endchoice
+          
+    config PKG_LIBUTILS_VER
+       string
+       default "v1.0.0"    if PKG_USING_LIBCALLBACK_V100
+       default "latest"    if PKG_USING_LIBCALLBACK_LATEST_VERSION
+
+    #config LIBCALLBACK_USING_DEMO
+    #    bool
+    #    prompt "libcallback demo example"
+    #    default n
+
+endif
+
