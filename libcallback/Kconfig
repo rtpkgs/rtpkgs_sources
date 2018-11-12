@@ -12,7 +12,7 @@ if PKG_USING_LIBCALLBACK
 
     choice
         prompt "Version"
-        default PKG_USING_LIBCALLBACK_LATEST_VERSION
+        default PKG_USING_LIBCALLBACK_V100
         help
             Select the package version
 
