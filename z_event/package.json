@@ -1,0 +1,12 @@
+
+{
+    "name": "z_event",
+    "description": "z_event: a generic unlimited event management package",
+    "keywords": [
+        "z_event"
+    ],
+    "site" : [
+    {"version" : "v1.0.0", "URL" : "https://github.com/rtpkgs/z_event.git", "filename" : "z_event-v1.0.0.zip","VER_SHA" : "39056df1998e518c61b67ace0a0a9e9bdbe0d15b"},
+    {"version" : "latest", "URL" : "https://github.com/rtpkgs/z_event.git", "filename" : "z_event-latest.zip","VER_SHA" : "master"}
+    ]
+}

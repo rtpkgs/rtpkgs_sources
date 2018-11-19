@@ -1,0 +1,37 @@
+
+# Kconfig file for package z_event
+menuconfig PKG_USING_Z_EVENT
+    bool "z_event: a generic unlimited event management package"
+    default n
+
+if PKG_USING_Z_EVENT
+
+    config PKG_Z_EVENT_PATH
+        string
+        default "/rtpkgs_sources/z_event"
+
+    choice
+        prompt "Version"
+        default PKG_USING_Z_EVENT_LATEST_VERSION
+        help
+            Select the package version
+
+        config PKG_USING_Z_EVENT_V100
+            bool "v1.0.0"
+
+        config PKG_USING_Z_EVENT_LATEST_VERSION
+            bool "latest"
+    endchoice
+          
+    config PKG_Z_EVENT_VER
+       string
+       default "v1.0.0"    if PKG_USING_Z_EVENT_V100
+       default "latest"    if PKG_USING_Z_EVENT_LATEST_VERSION
+
+    #config Z_EVENT_USING_DEMO
+    #    bool
+    #    prompt "z_event demo example"
+    #    default n
+
+endif
+

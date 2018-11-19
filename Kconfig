@@ -6,5 +6,7 @@ source "$PKGS_DIR/rtpkgs_sources/libbmpread/Kconfig"
 source "$PKGS_DIR/rtpkgs_sources/libutils/Kconfig"
 source "$PKGS_DIR/rtpkgs_sources/sam/Kconfig"
 source "$PKGS_DIR/rtpkgs_sources/libcallback/Kconfig"
+source "$PKGS_DIR/rtpkgs_sources/z_event/Kconfig"
+source "$PKGS_DIR/rtpkgs_sources/libstm32hal/Kconfig"
 
 endmenu

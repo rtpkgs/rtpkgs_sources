@@ -1,0 +1,42 @@
+
+# Kconfig file for package libstm32hal
+menuconfig PKG_USING_LIBSTM32HAL
+    bool "libstm32hal: STM32 HAL static link library for rt-thread"
+    default n
+
+if PKG_USING_LIBSTM32HAL
+
+    config PKG_LIBSTM32HAL_PATH
+        string
+        default "/rtpkgs_sources/libstm32hal"
+
+    choice
+        prompt "Version"
+        default PKG_USING_LIBSTM32HAL_LATEST_VERSION
+        help
+            Select the package version
+
+        config PKG_USING_LIBSTM32HAL_V010
+            bool "v0.1.0"
+
+        config PKG_USING_LIBSTM32HAL_LATEST_VERSION
+            bool "latest"
+    endchoice
+          
+    config PKG_LIBSTM32HAL_VER
+       string
+       default "v0.1.0"    if PKG_USING_LIBSTM32HAL_V010
+       default "latest"    if PKG_USING_LIBSTM32HAL_LATEST_VERSION
+
+    #config LIBSTM32HAL_USING_DEMO
+    #    bool
+    #    prompt "libstm32hal demo example"
+    #    default n
+
+    config LIBSTM32HAL_USING_STATIC_LIB
+        bool
+        prompt "libstm32hal using static lib"
+        default y
+
+endif
+
